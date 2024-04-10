@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background-dark: #444;
+  --background-light: #f9f9f9;
+  --menu-background: #fff;
+  --input-background: #3498db;
+  --box-shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: var(--background-dark);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--background-light);
+}
+
+.mainMenu {
+  background: var(--menu-background);
+  width: 100%;
+  height: 6.5rem;
+  border: 1px solid red;
+}
+
+.inputMenu {
+  background: var(--input-background);
+  padding: 1rem;
+  box-shadow: 5px 10px 20px var(--box-shadow-color);
+}
+
+.inputMenu input {
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  box-shadow: 5px 10px 20px var(--box-shadow-color);
+}
+
+.titleSelector ul.show {
+  display: none;
+  position: absolute;
+  top: 15%;
+  list-style: none;
+  border-radius: 10px;
+  border: none;
+  max-width: inherit;
+  /* padding: 1rem;
+  margin: 0 1rem; */
+  background: var(--background-light);
+  box-shadow: 5px 10px 20px var(--box-shadow-color);
+}
+
+.titleSelector ul.show {
+  display: block;
+}
+
+#menuText:focus + ul {
+  display: block;
+}
+
+#locationText:focus + ul {
+  display: block;
+  padding: 0 2.1rem;
+  left: 50%;
+}
+
+#menuText:hover li {
+  background: #3498db;
+}
+
+#locationText:hover + li {
+  background: #3498db;
+}
+
+.commentSection input {
+  width: calc(100% - 1.85rem);
+  padding: 2rem;
+}

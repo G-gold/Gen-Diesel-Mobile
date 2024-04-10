@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background-dark: #444;
+  --background-light: #f9f9f9;
+  --menu-background: #fff;
+  --input-background: #3498db;
+  --box-shadow-color: rgba(0, 0, 0, 0.5);
+  --menu-item-background: #f5f5f5;
+  --menu-item-hover: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: var(--background-dark);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--background-light);
+}
+
+.mainMenu {
+  background: var(--menu-background);
+  /* width: 100%; */
+  height: 6.5rem;
+  border: 1px solid red;
+}
+
+.inputMenu {
+  background: var(--input-background);
+  padding: 0.5rem;
+  box-shadow: 5px 10px 20px var(--box-shadow-color);
+}
+
+.inputMenu input {
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  margin: 10px 5px;
+  width: 12.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  box-shadow: 5px 10px 20px var(--box-shadow-color);
+}
+
+.menuList,
+.locationList {
+  display: none;
+}
+
+.show {
+  display: block;
+  position: absolute;
+  list-style: none;
+  border-radius: 10px;
+  border: none;
+  width: 12.5rem;
+  background: var(--background-light);
+  box-shadow: 5px 10px 20px var(--box-shadow-color);
+  margin: 5px;
+  padding: 1rem;
+}
+
+.locationList {
+  /* display: none; */
+  left: 50%;
+}
+
+.locationList li {
+  padding: 0 2.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menuList li {
+  background: var(--menu-item-background);
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.titleSelector ul li:hover {
+  background: var(--menu-item-hover);
+}
+
+.selectDate {
+  /* position: absolute; */
+  border-radius: 10px;
+  border: none;
+  width: 13rem;
+  background: var(--background-light);
+  box-shadow: 5px 10px 20px var(--box-shadow-color);
+  margin: 5px;
+  padding: 1rem;
+}
+
+.commentSection input {
+  width: calc(100% - 0.85rem);
+  padding: 3rem;
+}
+
+.submitBtn {
+  display: flex;
+  justify-content: center;
+}
+
+#submitForm:hover {
+  background: var(--menu-item-hover);
+}

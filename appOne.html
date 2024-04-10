@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="appOne.css" />
+    <title>Gen & Diesel Reading</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main menu section -->
+      <!-- <section class="mainMenu">
+        <div class="menu"></div>
+      </section> -->
+
+      <!-- This section is for inputting the info -->
+      <section class="inputMenu">
+        <div class="titleSelector">
+          <input
+            type="text"
+            id="menuText"
+            class="menuText"
+            placeholder=" Select title"
+            readonly
+            aria-haspopup="true"
+            aria-expanded="false"
+          />
+          <ul
+            id="menuList"
+            class="menuList"
+            role="menu"
+            aria-labelledby="menuText"
+          >
+            <li role="menuitem">Opening <span>reading</span></li>
+            <li role="menuitem">Closing reading</li>
+          </ul>
+
+          <input
+            type="text"
+            id="locationText"
+            class="locationText"
+            placeholder="Select a location"
+            readonly
+            aria-haspopup="true"
+            aria-expanded="false"
+          />
+          <ul class="locationList" role="menu" aria-labelledby="locationText">
+            <li role="menuitem">A3c</li>
+            <li role="menuitem">Annex 2</li>
+            <li role="menuitem">71 Kudirat</li>
+            <li role="menuitem">Real woman</li>
+          </ul>
+        </div>
+
+        <div class="dateSelector">
+          <input type="date" class="selectDate" placeholder="Select date" />
+          <input
+            type="time"
+            class="selectTime"
+            placeholder="Setup/Shutdown time"
+          />
+        </div>
+
+        <div class="genDetails">
+          <input type="text" class="" placeholder="Gen Size/Model" />
+          <input type="text" class="" placeholder="Gen Reading" />
+        </div>
+
+        <div class="dieselDetails">
+          <input type="text" placeholder="Diesel Size/Name" />
+          <input type="text" placeholder="Diesel Reading" />
+        </div>
+
+        <div class="programType">
+          <input type="text" placeholder="Program type" />
+          <input type="text" placeholder="Start/End time" />
+        </div>
+
+        <div class="commentSection">
+          <input type="text" class="comment" placeholder="Comments" />
+        </div>
+        <div class="submitBtn">
+          <input type="submit" id="submitForm" />
+        </div>
+      </section>
+    </div>
+
+    <script src="appOne.js"></script>
+  </body>
+</html>

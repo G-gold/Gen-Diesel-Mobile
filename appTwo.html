@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="appTwo.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main menu section -->
+      <section class="mainMenu"><div class="menu"></div></section>
+      <!-- This section is for inputing the info -->
+      <section class="inputMenu">
+        <form>
+          <fieldset>
+            <legend>Title and Location</legend>
+            <div class="titleSelector">
+              <label for="menuText">Select title:</label>
+              <input
+                type="text"
+                id="menuText"
+                placeholder="Select title"
+                readonly
+              />
+              <ul>
+                <li>Opening Reading</li>
+                <li>Closing Reading</li>
+              </ul>
+            </div>
+            <div class="dateSelector">
+              <label for="locationText">Select a location:</label>
+              <input
+                type="text"
+                id="locationText"
+                placeholder="Select a location"
+                readonly
+              />
+              <ul>
+                <li>A3C</li>
+                <li>ANNEX 2</li>
+                <li>71 KUDIRAT</li>
+                <li>REAL WOMAN</li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Date and Time</legend>
+            <div class="dateSelector">
+              <label for="date">Select date:</label>
+              <input type="date" id="date" class="selectDate" required />
+              <label for="time">Setup/Shutdown time:</label>
+              <input type="time" id="time" class="selectTime" required />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Generator and Diesel Details</legend>
+            <div class="genDetails">
+              <label for="genSize">Gen Size/Model:</label>
+              <input
+                type="text"
+                id="genSize"
+                placeholder="Gen Size/Model"
+                required
+              />
+              <label for="genReading">Gen Reading:</label>
+              <input
+                type="text"
+                id="genReading"
+                placeholder="Gen Reading"
+                required
+              />
+            </div>
+            <div class="dieselDetails">
+              <label for="dieselSize">Diesel Size/Name:</label>
+              <input
+                type="text"
+                id="dieselSize"
+                placeholder="Diesel Size/Name"
+                required
+              />
+              <label for="dieselReading">Diesel Reading:</label>
+              <input
+                type="text"
+                id="dieselReading"
+                placeholder="Diesel Reading"
+                required
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Program Type</legend>
+            <div class="programType">
+              <label for="programType">Program type:</label>
+              <input
+                type="text"
+                id="programType"
+                placeholder="Program type"
+                required
+              />
+              <label for="startEndTime">Start/End time:</label>
+              <input
+                type="time"
+                id="startEndTime"
+                placeholder="Start/End time"
+                required
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Comments</legend>
+            <div class="commentSection">
+              <label for="comment">Comments:</label>
+              <textarea
+                id="comment"
+                class="comment"
+                placeholder="Comments"
+                required
+              ></textarea>
+            </div>
+          </fieldset>
+          <div class="buttonSection">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
